@@ -11,6 +11,7 @@ using System.Web.Http.Description;
 using GestorPlantillas;
 using GestorPlantillas.Models;
 using GestorPlantillas.Service;
+using System.Web.Http.Cors;
 
 namespace GestorPlantillas.Controllers
 {

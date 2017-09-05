@@ -11,6 +11,6 @@ namespace GestorPlantillas
         public String Tipo { get; set; }
         public String Descripcion { get; set; }
         public DateTime FechaCreacion { get; set; }
-        public List<long> TiposDocumento { get; set; }
+        //public List<long> TiposDocumento { get; set; }
     }
 }
