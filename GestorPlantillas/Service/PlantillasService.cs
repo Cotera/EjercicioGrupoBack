@@ -23,6 +23,7 @@ namespace GestorPlantillas.Service
                 {
                     try
                     {
+                        Plantilla.FechaCreacion = DateTime.Now;
                         Plantilla = PlantillasRepository.Create(Plantilla);
                         context.SaveChanges();
                         dbContextTransaction.Commit();
