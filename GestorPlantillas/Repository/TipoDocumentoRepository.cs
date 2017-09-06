@@ -32,7 +32,12 @@ namespace GestorPlantillas.Repository
 
 		public TipoDocumento Delete(long Id)
 		{
-			throw new NotImplementedException();
-		}
+            TipoDocumento TipoDoc = this.Read(Id);
+            if (TipoDoc == null)
+            {
+                throw new NoEncontradoException("No se ha encontrado el tipo de documento a eliminar");
+            }
+            return ApplicationDbContext.applicationDbContext.TipoDocumento.Remove(TipoDoc);
+        }
 	}
 }
